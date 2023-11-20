@@ -4,6 +4,7 @@ using Collections.Dictonary;
 using Collections.HashTable;
 using Collections.List;
 using Collections.SortedList;
+using Collections.Stack;
 
 public class Program
 {
@@ -42,6 +43,11 @@ public class Program
 					HashTableOps hops = new HashTableOps();
 					hops.HashTableSwitch();
 					break;
+
+				case "stack":
+					 StackOps sops = new StackOps();
+					 sops.StackSwitch();
+					 break;
 			}
 		}
 	}
