@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Collections.Chap01ArrayList;
 using Collections.List;
+using Collections.SortedList;
 
 public class Program
 {
@@ -23,6 +24,11 @@ public class Program
 				case "list":
 					ListOps listOps = new ListOps();
 					listOps.ListOpsSwitch();
+					break;
+
+				case "sortlist":
+					SortedListOps sl = new SortedListOps();
+					sl.SortedListSwitch();
 					break;
 			}
 		}
