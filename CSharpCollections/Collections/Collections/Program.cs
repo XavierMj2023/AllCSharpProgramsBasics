@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Collections.Chap01ArrayList;
+using Collections.Dictonary;
 using Collections.List;
 using Collections.SortedList;
 
@@ -29,6 +30,11 @@ public class Program
 				case "sortlist":
 					SortedListOps sl = new SortedListOps();
 					sl.SortedListSwitch();
+					break;
+
+				case "dict":
+					DictonaryOps dictOps = new DictonaryOps();
+					dictOps.DictonarySwitch();
 					break;
 			}
 		}

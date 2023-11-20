@@ -11,6 +11,12 @@ The ArrayList class included in the System.Collections namespace.
 Create an object of the ArrayList using the new keyword.
 
 ---------------------------------------------------
+Adding Elements in ArrayList
+---------------------------------------------------
+Use the Add() method or object initializer syntax to add elements in an ArrayList.
+An ArrayList can contain multiple null and duplicate values.
+
+---------------------------------------------------
 AddRange(ICollection c)
 ---------------------------------------------------
 Use the AddRange(ICollection c) method to add an entire Array, HashTable, SortedList, ArrayList, BitArray, Queue
