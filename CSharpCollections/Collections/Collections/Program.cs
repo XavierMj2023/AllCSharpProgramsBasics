@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Collections.Chap01ArrayList;
 using Collections.Dictonary;
+using Collections.HashTable;
 using Collections.List;
 using Collections.SortedList;
 
@@ -35,6 +36,11 @@ public class Program
 				case "dict":
 					DictonaryOps dictOps = new DictonaryOps();
 					dictOps.DictonarySwitch();
+					break;
+
+				case "hashtable":
+					HashTableOps hops = new HashTableOps();
+					hops.HashTableSwitch();
 					break;
 			}
 		}
