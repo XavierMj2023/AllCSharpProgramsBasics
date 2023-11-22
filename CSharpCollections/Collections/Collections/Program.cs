@@ -3,8 +3,10 @@ using Collections.Chap01ArrayList;
 using Collections.Dictonary;
 using Collections.HashTable;
 using Collections.List;
+using Collections.Queque;
 using Collections.SortedList;
 using Collections.Stack;
+using Collections.Tuple;
 
 public class Program
 {
@@ -48,6 +50,16 @@ public class Program
 					 StackOps sops = new StackOps();
 					 sops.StackSwitch();
 					 break;
+
+				case "que":
+					 QuequeOps quequeOps = new QuequeOps();
+					 quequeOps.QuequeSwitch();
+					 break;
+
+				case "tup":
+					  TupleOps toops = new TupleOps();
+					  toops.TupleSwitch();
+					  break;
 			}
 		}
 	}
