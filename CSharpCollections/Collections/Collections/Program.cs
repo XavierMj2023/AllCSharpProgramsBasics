@@ -7,6 +7,7 @@ using Collections.Queque;
 using Collections.SortedList;
 using Collections.Stack;
 using Collections.Tuple;
+using Collections.ValueTuple;
 
 public class Program
 {
@@ -59,6 +60,11 @@ public class Program
 				case "tup":
 					  TupleOps toops = new TupleOps();
 					  toops.TupleSwitch();
+					  break;
+
+				case "valtup":
+					  ValueTupleOps valueTupleOps = new ValueTupleOps();
+					  valueTupleOps.ValueTupleSwitch();
 					  break;
 			}
 		}

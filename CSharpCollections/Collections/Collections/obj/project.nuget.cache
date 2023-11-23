@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lwFPGMyswe8vthv9j6Z6wAgl0z2C5GhdME9bsm1mmbTYXsTDZGM7RZqu/3a6SCSRTzvM3GOUvXctjJwoilbJTw==",
+  "dgSpecHash": "J8cee9bhg+TpXcgu5xLCOW8Tf5tbo3PaJ3lpf2ubn1AsiFf/7wTt+k7RObZlEqWCuGMBlZCuEOVMWY7RYZ2Ogg==",
   "success": true,
   "projectFilePath": "D:\\RECYCLE BIN EXTRAS\\ONLY_DOCS\\AllCSharpBasicPrograms\\CSharpCollections\\Collections\\Collections\\Collections.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dinit\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
