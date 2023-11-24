@@ -1,0 +1,18 @@
+﻿Create Table MSSQLDBAdd
+(
+	Id uniqueidentifier PRIMARY KEY,
+	Tid int IDENTITY(1,1) PRIMARY KEY,
+	TopicName varchar(255),
+	Syntax varchar(255),
+	Description varchar(255),
+	ImageId uniqueidentifier,
+	CONSTRAINT FK_ImageHolder FOREIGN KEY (ImageId)
+    REFERENCES MSSQLImage(ImageId)
+);
+
+Create Table MSSQLImage
+(
+	ImageId uniqueidentifier PRIMARY KEY,
+	ImageName varchar(255),
+	ImageData varbinary(max)
+);

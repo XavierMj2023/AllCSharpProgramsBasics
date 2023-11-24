@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "MSSQLAdd";
+}
+
+
+<form class="col" id="ms" style="width:70%;text-align:center;margin:0 auto;">
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Topic Guid" aria-label="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Topic Id" aria-label="Last name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Topic Name" aria-label="Last name">
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col">
+            <textarea class="form-control" placeholder="Syntax For Topic" id="floatingTextarea2" style="height: 100px;"></textarea>
+        </div>
+        <div class="col">
+            <textarea class="form-control" placeholder="High Description" id="floatingTextarea2" style="height: 100px;"></textarea>
+        </div>
+    </div>
+    <br /><br />
+    <div class="row">
+        <div class="mb-3">
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="col-10">
+             <button type="submit" class="btn btn-primary">Add Topic</button>
+         </div>
+    </div>
+</form>
