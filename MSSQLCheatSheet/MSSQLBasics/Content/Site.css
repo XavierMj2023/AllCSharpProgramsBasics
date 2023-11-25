@@ -33,6 +33,9 @@ body{
 }
 #ms {
     background-color: mediumvioletred;
-    margin:5px;
-    padding:5px;
+    margin: 5px;
+    padding: 5px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
 }

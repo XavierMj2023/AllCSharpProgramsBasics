@@ -1,37 +1,31 @@
-﻿
+﻿@model MSSQLBasics.Models.MSSQLAddData
+
 @{
     ViewBag.Title = "MSSQLAdd";
 }
 
+@using(Html.BeginForm("MSSQLAdd", "MSSQL", FormMethod.Post, new { enctype = "multipart/form-data", id = "ms" }))
+{
+    <div class="row">
+        <div class="col">
+            @Html.TextBoxFor(model => model.TopicName, new { @class = "form-control", @placeholder = "Topic Name" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            @Html.TextAreaFor(model => model.Syntax, new { @class = "form-control", @placeholder = "Syntax", @style = "height:100px;margin-top:10px" })
+        </div>
+        <div class="col">
+            @Html.TextAreaFor(model => model.Descrption, new { @class = "form-control", @placeholder = "Description", @style = "height:100px;margin-top:10px" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            @Html.TextBoxFor(model => model.ImageData, new { type = "file", @class = "form-control", style = "margin-top:10px" })
 
-<form class="col" id="ms" style="width:70%;text-align:center;margin:0 auto;">
-    <div class="row">
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Topic Guid" aria-label="First name">
         </div>
         <div class="col">
-            <input type="text" class="form-control" placeholder="Topic Id" aria-label="Last name">
-        </div>
-        <div class="col">
-            <input type="text" class="form-control" placeholder="Topic Name" aria-label="Last name">
+            <input class="btn btn-success btn-sm" type="submit" value="Add Topic" style="margin-top:10px"/>
         </div>
     </div>
-    <br />
-    <div class="row">
-        <div class="col">
-            <textarea class="form-control" placeholder="Syntax For Topic" id="floatingTextarea2" style="height: 100px;"></textarea>
-        </div>
-        <div class="col">
-            <textarea class="form-control" placeholder="High Description" id="floatingTextarea2" style="height: 100px;"></textarea>
-        </div>
-    </div>
-    <br /><br />
-    <div class="row">
-        <div class="mb-3">
-            <input class="form-control" type="file" id="formFile">
-        </div>
-        <div class="col-10">
-             <button type="submit" class="btn btn-primary">Add Topic</button>
-         </div>
-    </div>
-</form>
+}

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MSSQLBasics.Models;
+using MSSQLBasics.Repository;
 
 namespace MSSQLBasics.Controllers
 {
@@ -14,16 +15,16 @@ namespace MSSQLBasics.Controllers
         {
             return View();
         }
-        [HttpGet]
         public ActionResult MSSQLAdd()
         {
             return View();
         }
 		[HttpPost]
-		public ActionResult MSSQLAdd(MSSQLAddData adddata)
+		public ActionResult MSSQLAdd(MSSQLAddData adddata, HttpPostedFileBase imagefile)
 		{
-
-			return View();
+			GetData dataRepository = new GetData();
+			dataRepository.SaveMSSQLData(adddata, imagefile);
+			return RedirectToAction("Index");
 		}
 		public ActionResult MSSQLTopics()
 		{

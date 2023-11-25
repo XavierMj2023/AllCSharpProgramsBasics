@@ -10,6 +10,6 @@ namespace MSSQLBasics.Models
         public Guid ImageId { get; set; }
         public byte[] ImageData { get; set; }
 		// Navigation property to represent the relationship
-		public ICollection<MSSQLAddData> Images { get; set; } = new List<MSSQLAddData>();
+		//public ICollection<MSSQLAddData> Images { get; set; } = new List<MSSQLAddData>();
 	}
 }
