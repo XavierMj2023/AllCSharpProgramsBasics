@@ -45,7 +45,7 @@ namespace MSSQLBasics.Repository
 						byte[] imageData = binaryReader.ReadBytes(imagefile.ContentLength);
 						adddata.ImageData = imageData; // Ensure ImageData property holds the image bytes
 						cmdInsertData.Parameters.AddWithValue("@ImageId", Guid.NewGuid());
-						cmdInsertData.Parameters.AddWithValue("@ImageData", imageData);
+						cmdInsertData.Parameters.AddWithValue("@ImageData", adddata.ImageData);
 					}
 				}
 				else

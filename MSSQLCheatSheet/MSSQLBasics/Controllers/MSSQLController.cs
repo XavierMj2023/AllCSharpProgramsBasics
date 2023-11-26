@@ -22,9 +22,10 @@ namespace MSSQLBasics.Controllers
 		[HttpPost]
 		public ActionResult MSSQLAdd(MSSQLAddData adddata, HttpPostedFileBase imagefile)
 		{
-			GetData dataRepository = new GetData();
-			dataRepository.SaveMSSQLData(adddata, imagefile);
-			return RedirectToAction("Index");
+			GetData gd = new GetData();
+            gd.SaveMSSQLData(adddata,imagefile);
+            ModelState.Clear();
+            return View();
 		}
 		public ActionResult MSSQLTopics()
 		{
